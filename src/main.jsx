@@ -4,6 +4,8 @@ import { Toaster } from "react-hot-toast";
 import "modern-normalize";
 import "./index.css";
 import App from "./App.jsx";
+import Modal from "react-modal";
+Modal.setAppElement("#root");
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>

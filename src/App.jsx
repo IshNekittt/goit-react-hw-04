@@ -8,7 +8,6 @@ import Loader from "./components/Loader/Loader";
 import SearchBar from "./components/SearchBar/SearchBar";
 import { useEffect, useState } from "react";
 import ImageModal from "./components/ImageModal/ImageModal";
-import Modal from "react-modal";
 
 function App() {
   const [data, setData] = useState([]);
@@ -19,10 +18,6 @@ function App() {
   const [totalPages, setTotalPages] = useState(0);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [currentElem, setCurrentElem] = useState(null);
-
-  useEffect(() => {
-    Modal.setAppElement("#root");
-  }, []);
 
   useEffect(() => {
     if (!query) return;
