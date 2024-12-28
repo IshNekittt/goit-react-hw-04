@@ -17,7 +17,6 @@
   border: none;
   outline: none;
   max-width: 70%;
-  object-fit: contain;
 }
 
 .modalContentWrapper {
@@ -38,5 +37,6 @@
   flex-direction: column;
   row-gap: 10px;
   overflow-y: auto;
-  max-height: 30vh;
+  max-height: 20vh;
+  color: #e0e0e0;
 }
