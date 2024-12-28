@@ -61,7 +61,7 @@ function App() {
   const handleModalOpen = (elem) => {
     if (isModalOpen) return;
     setCurrentElem(elem);
-    setIsModalOpen((prev) => !prev);
+    setIsModalOpen(true);
   };
 
   const handleModalClose = () => {

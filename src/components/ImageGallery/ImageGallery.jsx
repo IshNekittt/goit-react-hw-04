@@ -5,12 +5,8 @@ export default function ImageGallery({ items, onModalOpen }) {
     <ul className={s.list}>
       {items.map((item) => {
         return (
-          <li
-            className={s.listItem}
-            key={item.id}
-            onClick={() => onModalOpen(item)}
-          >
-            <ImageCard values={item} />
+          <li className={s.listItem} key={item.id}>
+            <ImageCard values={item} handleClick={onModalOpen} />
           </li>
         );
       })}
